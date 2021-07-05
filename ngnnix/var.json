@@ -1,0 +1,5 @@
+{
+    "aws_region": "us-east-2",
+    "aws_source_ami_id": "ami-0d563aeddd4be7fff",
+    "aws_ssh_username": "ubuntu"
+}
