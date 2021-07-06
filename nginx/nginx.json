@@ -5,7 +5,7 @@
         "aws_region": "",
         "aws_source_ami_id": "",
         "aws_ssh_username": "",
-        "scriptpath": "installngnginx.sh"
+        "scriptpath": "instal-nginx.sh"
     },
     "builders": [
         {
@@ -16,7 +16,7 @@
             "source_ami": "{{user `aws_source_ami_id`}}",
             "instance_type": "t2.micro",
             "ssh_username": "{{user `aws_ssh_username`}}",
-            "ami_name": "packer_ngnix {{timestamp}}"
+            "ami_name": "packer_nginx {{timestamp}}"
         }
     ],
     "Provisioners": [
@@ -26,4 +26,3 @@
         }
     ]
 }
-
